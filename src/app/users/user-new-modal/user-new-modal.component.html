@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">User Creation</h4>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name :</label>
+      <input class="form-control" type="text" id="firstName" name="firstName" [(ngModel)]="user.firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name :</label>
+      <input class="form-control" type="text" id="lastName" name="firstName" [(ngModel)]="user.lastName">
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+  <button type="button" class="btn btn-outline-secondary" (click)="dismiss()">Annuler</button>
+</div>

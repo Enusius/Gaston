@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-lg-3">
+    <button class="btn btn-success" >New Strength test...</button>
+  </div>
+  <div class="col-lg-6">
+    <div>
+      <canvas baseChart width="400" height="200"
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"></canvas>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6 offset-lg-3">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Date</th>
+          <th>Weight (Lbs)</th>
+          <th>Maximum Finger Strength (Lbs)</th>
+          <th>Ratio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Lorem ipsum.</td>
+          <td>Officia, quia!</td>
+          <td>Dolorum, nam.</td>
+          <td>Provident, tempore!</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

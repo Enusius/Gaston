@@ -1,0 +1,33 @@
+<div class="container-list py-4">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3 py-2">
+      <button class="btn btn-primary" (click)="open()">Add User...</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th></th>
+            <th>User</th>
+            <th>Weight (Lbs)</th>
+            <th>Maximum Finger Strength (Lbs)</th>
+            <th>Ratio</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let user of users | async">
+            <td><button class="btn btn-sm btn-outline-info" routerLink="/users/{{user.key}}" >Show more...</button></td>
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
