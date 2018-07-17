@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs';
-import * as socketIo from '../../../node_modules/socket.io-client/dist/socket.io.slim.js';
+import * as socketIo from 'socket.io-client/dist/socket.io.slim.js';
 
 @Injectable({
   providedIn: 'root'
